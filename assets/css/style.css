@@ -1,0 +1,70 @@
+*{
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+}
+
+header {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#marquee {
+	padding: 30px;
+}
+
+#container {
+	width: 960px;
+	overflow: auto;
+	margin-bottom: 100px;
+	margin: 0 auto;
+}
+
+#buttonContainer {
+	width: 600px;
+	float: left;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	padding: 20px;
+	overflow: auto;
+	margin-bottom: 60px;
+}
+
+#formContainer {
+	float: right;
+	width: 300px;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	padding: 20px;
+	overflow: auto;
+	margin-bottom: 60px;
+}
+
+#giphyContainer {
+	clear: both;
+	margin: 0 auto;
+	width: 800px;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	padding: 20px;
+	overflow: auto;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	padding: 30px;
+}
