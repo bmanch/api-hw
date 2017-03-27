@@ -9,16 +9,34 @@ html {
 body {
 	position: relative;
 	min-height: 100%;
+	background-image: url('../images/background.png');
+	color: #383F51;
+	font-family: 'Abel', sans-serif;
 }
 
 header {
 	width: 100%;
+	margin: 50px;
 	text-align: center;
-	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 30px;
 }
 
 #marquee {
+
+	margin: 0 auto;
+	font-size: 70px;
+	font-family: 'Fascinate Inline', cursive;
+	color: #F0803C;
+	background-color: #EDF060;
 	padding: 30px;
+	width: 300px;
+	border-style: solid;
+	border-color: #383F51;
+	border-width: 3px;
+	border-radius: 100px;
 }
 
 #container {
@@ -28,35 +46,107 @@ header {
 	margin: 0 auto;
 }
 
-#buttonContainer {
+#buttonMarquee {
+	text-align: center;
 	width: 600px;
 	float: left;
 	border-style: solid;
-	border-color: black;
-	border-width: 2px;
-	padding: 20px;
+	border-color: #383F51;
+	border-width: 0 0 1px 0;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+#buttonContainer {
+	width: 600px;
+	float: left;
+	padding-top: 20px;
 	overflow: auto;
+	text-align: center;
 	margin-bottom: 60px;
+}
+
+.gifButton {
+	border-style: solid;
+	border-color: #F0803C;
+	border-width: 1px;
+	border-radius: 40px;
+	margin: 5px;
+	background-color: #3C4F76;
+	font-family: 'Abel', sans-serif;
+	color: #F5F9E9;
+	font-size: 14px;
+	padding: 5px 10px 5px 10px;
+}
+
+.gifButton:hover {
+	cursor: pointer;
+	border-color: #EDF060;
+	background-color: #EDF060;
+	color: #3C4F76;
+}
+
+.gifButton:focus, .gifButton:active {
+	border-color: #F0803C;
+	background-color: #3C4F76;
+	color: #F5F9E9;
 }
 
 #formContainer {
 	float: right;
 	width: 300px;
+	text-align: center;
 	border-style: solid;
-	border-color: black;
+	border-color: #383F51;
 	border-width: 2px;
+	border-radius: 15px;
 	padding: 20px;
 	overflow: auto;
 	margin-bottom: 60px;
 }
 
-#giphyContainer {
-	clear: both;
-	margin: 0 auto;
-	width: 90%;
+label {
+	font-size: 24px;
+}
+
+#user-input {
+	width: 160px;
+	height: 25px;
+}
+
+#user-submit {
 	border-style: solid;
-	border-color: black;
-	border-width: 2px;
+	border-color: #F0803C;
+	border-width: 1px;
+	border-radius: 40px;
+	margin: 5px;
+	background-color: #3C4F76;
+	font-family: 'Abel', sans-serif;
+	color: #F5F9E9;
+	padding: 5px 15px 5px 15px;
+	font-size: 18px;
+}
+
+#user-submit:hover {
+	cursor: pointer;
+	border-color: #EDF060;
+	background-color: #EDF060;
+	color: #3C4F76;
+}
+
+#gifMarquee {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	border-style: solid;
+	border-color: #383F51;
+	border-width: 0 0 1px 0;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+#giphyContainer {
+	width: 100%;
 	padding: 20px;
 	overflow: auto;
 	margin-bottom: 100px;
@@ -68,6 +158,7 @@ header {
 
 .gifDiv {
 	display: inline-block;
+	text-align: center;
 	margin: 20px;
 }
 
@@ -79,6 +170,21 @@ footer {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
+	font-size: 16px;
 	width: 100%;
 	padding: 30px;
+	border-style: solid;
+	border-color: #383F51;
+	border-width: 2px 0 0 0;
+	background-color: #FFF;
+}
+
+a {
+	color: #383F51;
+	text-decoration: none;
+}
+
+a:hover {
+	background: #383F51;
+	color: #F5F9E9;
 }

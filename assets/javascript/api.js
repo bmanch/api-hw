@@ -90,20 +90,25 @@ $(document).ready(function() {
 		});
 
 		$('#user-submit').on('click', function(event) {
-
+			
 			event.preventDefault();
 
 			var userCommedian = $('#user-input').val().trim();
 
 			console.log(userCommedian);
 
-			topics.push(userCommedian);
+			//I used a conditional to prevent blank buttons
 
-			$('#user-input').val("");
+			if (userCommedian !== "") {
 
-			console.log(topics);
+				topics.push(userCommedian);
 
-			buttonMaker();
+				$('#user-input').val("");
+
+				console.log(topics);
+
+				buttonMaker();
+			}
 		});
 
 	}
