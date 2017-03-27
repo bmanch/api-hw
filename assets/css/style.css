@@ -53,12 +53,26 @@ header {
 #giphyContainer {
 	clear: both;
 	margin: 0 auto;
-	width: 800px;
+	width: 90%;
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
 	padding: 20px;
 	overflow: auto;
+	margin-bottom: 100px;
+}
+
+.rating {
+	margin-bottom: 10px;
+}
+
+.gifDiv {
+	display: inline-block;
+	margin: 20px;
+}
+
+.gifBox {
+	cursor: pointer;
 }
 
 footer {
