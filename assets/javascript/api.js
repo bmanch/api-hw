@@ -37,9 +37,7 @@ $(document).ready(function() {
 				arrayCommedian.splice(3, 0, "+");
 			}
 
-			console.log(arrayCommedian);
 			var searchCommedian = arrayCommedian.join("");
-			console.log(searchCommedian);
 
 			var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchCommedian + "&api_key=dc6zaTOxFJmzC&limit=10";
 
@@ -47,7 +45,6 @@ $(document).ready(function() {
 				url: queryURL,
 				method: "GET"
 			}).done(function(response) {
-				console.log(response);
 
 				var results = response.data;
 
@@ -88,30 +85,25 @@ $(document).ready(function() {
 				});
 			});
 		});
-
-		$('#user-submit').on('click', function(event) {
-			
-			event.preventDefault();
-
-			var userCommedian = $('#user-input').val().trim();
-
-			console.log(userCommedian);
-
-			//I used a conditional to prevent blank buttons
-
-			if (userCommedian !== "") {
-
-				topics.push(userCommedian);
-
-				$('#user-input').val("");
-
-				console.log(topics);
-
-				buttonMaker();
-			}
-		});
-
 	}
+
+	$('#user-submit').on('click', function(event) {
+			
+		event.preventDefault();
+
+		var userCommedian = $('#user-input').val().trim();
+
+		//I used a conditional to prevent blank buttons
+
+		if (userCommedian !== "") {
+
+			topics.push(userCommedian);
+
+			$('#user-input').val("");
+
+			buttonMaker();
+		}
+	});
 
 	buttonMaker();
 
